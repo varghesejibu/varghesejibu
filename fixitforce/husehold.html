@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fix It Force</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+    header {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header img {
+      height: 35px;
+    }
+    header .chat-icon {
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .location-bar {
+      background: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    .banner {
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .banner img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .category-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      padding: 10px 15px;
+    }
+    .category-card {
+      background: #fff;
+      border-radius: 12px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .category-card:hover {
+      transform: scale(1.05);
+    }
+    .category-card img {
+      width: 70px;
+      height: 70px;
+    }
+    .category-card p {
+      margin: 10px 0 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .see-more {
+      text-align: center;
+      margin: 15px 0;
+    }
+    .see-more button {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 6px 15px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    /* Bottom Navbar */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 8px 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    .bottom-nav i {
+      font-size: 22px;
+      cursor: pointer;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Home_Repair_Icon.png" alt="Fix It Force Logo">
+    <i class="fa-brands fa-facebook-messenger chat-icon"></i>
+  </header>
+
+  <!-- Location Bar -->
+  <div class="location-bar">
+    <i class="fa-solid fa-location-dot"></i>
+    Enable location for a better experience
+    <i class="fa-solid fa-caret-down"></i>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="https://img.freepik.com/free-psd/air-conditioning-template-design_23-2149373940.jpg" alt="Promo Banner">
+  </div>
+
+  <!-- Categories -->
+  <div class="category-header">
+    <span>Category</span>
+    <i class="fa-solid fa-chevron-right"></i>
+  </div>
+
+  <div class="categories">
+    <div class="category-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png" alt="Electrician">
+      <p>Electrician</p>
+    </div>
+    <div class="category-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2966/2966489.png" alt="Mason">
+      <p>Mason</p>
+    </div>
+    <div class="category-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1995/1995568.png" alt="Plumber">
+      <p>Plumber</p>
+    </div>
+    <div class="category-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" alt="Installation">
+      <p>Installation</p>
+    </div>
+  </div>
+
+  <div class="see-more">
+    <button>See More</button>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-user-plus"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+    <i class="fa-solid fa-bell"></i>
+    <i class="fa-solid fa-user"></i>
+  </div>
+
+</body>
+</html>
